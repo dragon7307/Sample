@@ -1,0 +1,27 @@
+name: Feature Request
+description: Request a feature
+title: "[Enhancement]: "
+labels: ["enhancement", "triage"]
+projects: ["draconware-dev/Sample"]    
+assignees:
+  - dragon7307
+body:
+  - type: markdown
+    attributes:
+      value: |
+        Thanks for taking the time to fill out this feature-request!
+  - type: textarea
+    id: feature
+    attributes:
+      label: Describe the proposed feature?
+      description: Constraints
+    validations:
+      required: true
+  - type: checkboxes
+    id: terms
+    attributes:
+      label: Code of Conduct
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/dragon7307/Sample/blob/main/.github/CODE_OF_CONDUCT.md)
+      options:
+        - label: I agree to follow this project's Code of Conduct
+          required: true
