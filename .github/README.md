@@ -1,3 +1,3 @@
 # Sample 
- 
-The default skeleton.   
+
+The default skeleton.
