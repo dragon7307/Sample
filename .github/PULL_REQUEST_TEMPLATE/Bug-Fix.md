@@ -13,10 +13,8 @@ body:
   - type: textarea
     id: what-happened
     attributes:
-      label: What happened?
-      description: What happened vs. what did you expect to happen?
-      placeholder: Tell us what you see!
-      value: "A bug happened!"
+      label: Describe the bug?
+      description: What happened?
     validations:
       required: true
   - type: dropdown
@@ -25,21 +23,21 @@ body:
       label: Version
       description: What version of our software are you running?
       options:
-        - 1.0.2 (Default)
-        - 1.0.3 (Edge)
+        - 1.0.0 [Depreated]
+        - 1.1.0 (Current)
       default: 0
     validations:
       required: true
   - type: dropdown
-    id: browsers
+    id: os
     attributes:
-      label: What browsers are you seeing the problem on?
+      label: Which operating systems are you seeing the problem on?
       multiple: true
       options:
-        - Firefox
-        - Chrome
-        - Safari
-        - Microsoft Edge
+        - Windows
+        - Mac
+        - Linux
+        - Other 
   - type: textarea
     id: logs
     attributes:
@@ -50,7 +48,7 @@ body:
     id: terms
     attributes:
       label: Code of Conduct
-      description: By submitting this issue, you agree to follow our [Code of Conduct](https://example.com)
+      description: By submitting this issue, you agree to follow our [Code of Conduct](https://github.com/dragon7307/Sample/blob/main/.github/CODE_OF_CONDUCT.md)
       options:
         - label: I agree to follow this project's Code of Conduct
           required: true

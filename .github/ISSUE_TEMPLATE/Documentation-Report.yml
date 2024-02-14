@@ -22,29 +22,13 @@ body:
     id: version
     attributes:
       label: Version
-      description: What version of our software are you running?
+      description: What version of our software does this error occur in?
       options:
         - 1.0.0 [Depreated]
         - 1.1.0 (Current)
       default: 0
     validations:
       required: true
-  - type: dropdown
-    id: os
-    attributes:
-      label: Which operating systems are you seeing the problem on?
-      multiple: true
-      options:
-        - Windows
-        - Mac
-        - Linux
-        - Other 
-  - type: textarea
-    id: logs
-    attributes:
-      label: Relevant log output
-      description: Please copy and paste any relevant log output. This will be automatically formatted into code, so no need for backticks.
-      render: shell
   - type: checkboxes
     id: terms
     attributes:
