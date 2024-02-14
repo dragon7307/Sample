@@ -1,2 +1,0 @@
-# Sample
-The default skeleton 
